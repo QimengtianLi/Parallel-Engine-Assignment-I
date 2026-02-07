@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://3doqqchxldl4"]
+
+[ext_resource type="PackedScene" uid="uid://c8pdol788k7ya" path="res://assets/Models/GLB format/building-b.glb" id="1_1kssf"]
+[ext_resource type="PackedScene" uid="uid://clxrw5o137sxe" path="res://assets/Models/GLB format/building-d.glb" id="2_fj3te"]
+[ext_resource type="PackedScene" uid="uid://bulb24whhoui7" path="res://assets/Models/GLB format/building-c.glb" id="3_1u3pc"]
+[ext_resource type="PackedScene" uid="uid://2weh5s12dq1p" path="res://assets/Models/GLB format/building-e.glb" id="4_oxvur"]
+[ext_resource type="PackedScene" uid="uid://c4jbxxwa1bq1f" path="res://assets/Models/GLB format/building-k.glb" id="5_rmeea"]
+[ext_resource type="PackedScene" uid="uid://bcj72nhd4xyie" path="res://assets/Models/GLB format/building-skyscraper-a.glb" id="6_555ci"]
+[ext_resource type="PackedScene" uid="uid://c1keok6pror6h" path="res://assets/Models/GLB format/building-skyscraper-b.glb" id="7_gnjmw"]
+[ext_resource type="PackedScene" uid="uid://l1hio7b1rtqs" path="res://assets/Models/GLB format/detail-parasol-a.glb" id="8_l31yl"]
+[ext_resource type="PackedScene" uid="uid://bxhw7iyro3yk0" path="res://assets/Models/GLB format/building-skyscraper-c.glb" id="9_3qlk2"]
+[ext_resource type="PackedScene" uid="uid://6f0yepob48ru" path="res://assets/Models/GLB format/building-skyscraper-d.glb" id="10_xhj5n"]
+[ext_resource type="PackedScene" uid="uid://dss877t6qrr5r" path="res://assets/Models/GLB format/building-skyscraper-e.glb" id="11_gkqxt"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_81qeh"]
+size = Vector2(50, 50)
+
+[node name="City" type="Node3D" unique_id=659188025]
+
+[node name="Plane" type="MeshInstance3D" parent="." unique_id=2008947726]
+mesh = SubResource("PlaneMesh_81qeh")
+
+[node name="Buildings" type="Node3D" parent="." unique_id=535816404]
+
+[node name="building-b2" parent="Buildings" unique_id=691820625 instance=ExtResource("1_1kssf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5017489, 0, 0.6227634)
+
+[node name="building-d2" parent="Buildings" unique_id=793166174 instance=ExtResource("2_fj3te")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8601603, 0, 0.31701732)
+
+[node name="building-c2" parent="Buildings" unique_id=2013785322 instance=ExtResource("3_1u3pc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11662483, 0, -0.90537834)
+
+[node name="building-e2" parent="Buildings" unique_id=526457210 instance=ExtResource("4_oxvur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31853032, 0, 1.9077903)
+
+[node name="building-k2" parent="Buildings" unique_id=433357228 instance=ExtResource("5_rmeea")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8799037, 0, 1.9642141)
+
+[node name="building-skyscraper-a2" parent="Buildings" unique_id=76557418 instance=ExtResource("6_555ci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3434577, 0, 1.3102946)
+
+[node name="building-skyscraper-b2" parent="Buildings" unique_id=2040214242 instance=ExtResource("7_gnjmw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0809836, 0, -0.68811524)
+
+[node name="detail-parasol-a2" parent="Buildings/building-skyscraper-b2" unique_id=1268911036 instance=ExtResource("8_l31yl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3001454, 4.3337474, 0.27510405)
+
+[node name="building-skyscraper-c2" parent="Buildings" unique_id=386673562 instance=ExtResource("9_3qlk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.946893, 0, 4.1646976)
+
+[node name="building-skyscraper-d2" parent="Buildings" unique_id=2099077694 instance=ExtResource("10_xhj5n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7251692, 0, -1.2451385)
+
+[node name="building-skyscraper-e2" parent="Buildings" unique_id=336606843 instance=ExtResource("11_gkqxt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4172167, 0, 3.8221307)
