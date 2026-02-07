@@ -1,0 +1,9 @@
+# Godot generated files
+.import/
+.export/
+
+# Mono / C# (if used)
+.mono/
+
+# Translation cache
+*.translation

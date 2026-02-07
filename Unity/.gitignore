@@ -1,0 +1,13 @@
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Oo]bj/
+UserSettings/
+
+.idea/
+.vs/
+*.csproj
+*.sln
+*.user
