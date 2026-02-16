@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://bxhw7iyro3yk0" path="res://assets/Models/GLB format/building-skyscraper-c.glb" id="9_3qlk2"]
 [ext_resource type="PackedScene" uid="uid://6f0yepob48ru" path="res://assets/Models/GLB format/building-skyscraper-d.glb" id="10_xhj5n"]
 [ext_resource type="PackedScene" uid="uid://dss877t6qrr5r" path="res://assets/Models/GLB format/building-skyscraper-e.glb" id="11_gkqxt"]
+[ext_resource type="Script" uid="uid://cn14b5l5pvpdm" path="res://scenes/caller.gd" id="12_1u3pc"]
+[ext_resource type="Script" uid="uid://cliq6x4g3eq51" path="res://scenes/receiver.gd" id="12_fj3te"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_81qeh"]
 size = Vector2(50, 50)
@@ -54,3 +56,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7251692, 0, -1.2451385)
 
 [node name="building-skyscraper-e2" parent="Buildings" unique_id=336606843 instance=ExtResource("11_gkqxt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4172167, 0, 3.8221307)
+
+[node name="Receiver" type="Node3D" parent="." unique_id=361247892]
+script = ExtResource("12_fj3te")
+
+[node name="Caller" type="Node3D" parent="." unique_id=1029291312 node_paths=PackedStringArray("receiver")]
+script = ExtResource("12_1u3pc")
+receiver = NodePath("../Receiver")

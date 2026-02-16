@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770444191
+::res://::1771225830
 icon.svg::CompressedTexture2D::5224140442831026540::1770441644::1770441650::1::::<><><>0<>0<>5e971f5398441aa67893ee68369a0579<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+receiver.gd::GDScript::652682930653567936::1771225784::0::1::::<>Node3D<><>0<>0<><>::
 ::res://assets/::1770442575
 ::res://assets/Models/::1770442575
 ::res://assets/Models/FBX format/::1770442585
